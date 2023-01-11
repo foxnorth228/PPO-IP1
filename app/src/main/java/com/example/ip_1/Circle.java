@@ -1,9 +1,9 @@
 package com.example.ip_1;
 
 public class Circle {
-    public Integer cx;
-    public Integer cy;
-    public Integer r;
+    public int cx;
+    public int cy;
+    public int r;
 
     public Circle(int x, int y, int rad) {
         cx = x;

@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Inst.initDpi(100, 100, 100);
         playField = new DrawView(this);
         setContentView(playField);
         sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);

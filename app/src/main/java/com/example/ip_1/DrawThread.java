@@ -10,7 +10,7 @@ class DrawThread extends Thread {
     private boolean running = false;
     private final SurfaceHolder surfaceHolder;
     private final Bitmap base;
-    private DrawView view;
+    private final DrawView view;
 
     public DrawThread(SurfaceHolder surfaceHolder, DrawView view) {
         this.surfaceHolder = surfaceHolder;
@@ -25,7 +25,7 @@ class DrawThread extends Thread {
     @Override
     public void run() {
         Canvas canvas;
-        Rect rect = new Rect(0, 0, DrawView.screenWidth, DrawView.screenHeight);
+        Rect rect = new Rect(0, 0, Inst.screenWidth, Inst.screenHeight);
         Paint pen = new Paint();
         while (running) {
             canvas = null;
